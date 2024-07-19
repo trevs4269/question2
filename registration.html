@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Regristation Form</title>
+	<style>
+	    body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba[0, 0, 0, 0.1];
+	width: 300px;
+}
+
+h2 {
+	text-a;ign: center;
+}
+
+form {
+	 display: flex;
+	 flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"]
+input[type="email"]
+input[type="tel"]
+input[type="password"]{
+	padding: 8px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+input[type="tel"] {
+	width: calc[100% - 20px];
+}
+
+small {
+	font-size: 10px;
+	color: #888;
+}
+
+button {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	cursor: fingers;
+	font-size: 16px;
+	margin-top: 10ox;
+}
+
+button:hover {
+	background-color: #45a049
+}
+
+button:active {
+	background-color: #3e8e41
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+	   <h2>Registration Form</h2>
+	   <form< id="Registrationform" action="#" method="POST">
+	       <div class=form-group">
+		       <label for="name">Name:</label>
+			   <input type="text" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+			    <label for="email">Email ID:</label>
+				<input  type="email" id="email" name="email"
+required>
+            </div>
+			<div class="form-group">
+			    <label for="phone">Phone Number:</label>
+				<input type="tel" id="phone" name="phone"
+pattern="[0-9]{10}" required>
+                 <small>Format:10 digits only</small>
+			</div>
+			<div class="form=group">
+			    <label for="password">Set Password:</label>
+				<input type="password" id="password"
+name="password" minilength="6" required>
+            </div>
+			<button type="submit">Reister</button>
+	    </form>
+    </div>
+</body>
+</html
